@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信息审核</title>
+    <link href="../../frame/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../frame/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../../frame/css/animate.css" rel="stylesheet">
+    <link href="../../frame/css/style.css" rel="stylesheet">
+    <link href="../../static/css/indexSQ.css" rel="stylesheet">
+    <link href="../../static/css/ownerNameList.css" rel="stylesheet">
+    <link href="../../static/css/ownerCommitteeIndex.css" rel="stylesheet">
+</head>
+<body class="">
+    <div id="wrapper">
+       <nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="../../frame/img/profile_small.jpg" />
+                             </span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="empty_page.html#">
+                        <span class="clear"> 
+                                    <span class="block m-t-xs"> 
+                                        <strong class="font-bold">张大大</strong>
+                                    </span>
+                        <span class="block m-t-xs"> 
+                                        业委会主任
+                                    </span>
+                        <span class="text-muted text-xs block">万科金域提香<b class="caret"></b></span>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li><a href="#">小区1</a></li>
+                        <li><a href="#">小区2</a></li>
+                        <li><a href="#">小区3</a></li>
+                        <li class="divider"></li>
+                        <li><a href="../login.html">登出</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    IN+
+                </div>
+            </li>
+            <li class="">
+                <a href="../ownerCommittee/index.html"><i class="fa fa-flask"></i> <span class="nav-label">首页</span></a>
+            </li>
+
+            <li class="active">
+                <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">信息审核</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li class="active"><a href="../communityManage/index.html">信息审核</a></li>
+                    <li><a href="../buildingManage/index.html">业委会备案审核</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">用户管理</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="../operationManage/index.html">注册账号管理</a></li>
+                    <li><a href="../ownerCommittee/realNameMsg.html">手持身份证审核</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">业主大会总览</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="../ownerCommittee/startMeeting.html">业主发起业主大会</a></li>
+                    <li><a href="../ownerCommittee/callMeeting.html">召集业主大会</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">账号授权管理</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="../streetManage/empowerment.html">筹备组/会务组授权</a></li>
+                    <li><a href="../streetManage/index.html">业委会授权</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#"><i class="fa fa-diamond"></i> <span class="nav-label">业主信息管理</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="../ownerCommittee/ownerNameList.html">业主名单管理</a></li>
+                    <li><a href="../ownerCommittee/waitExamine.html">待人工审核业主信息</a></li>
+                    <li><a href="../ownerCommittee/realNameMsg.html">实名信息（手持身份证）</a></li>
+                    <li><a href="../ownerCommittee/ticketMsgManage.html">票权信息管理</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">通知公告管理</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="../ownerCommittee/ownerCallBoard.html">业主大会公告列表</a></li>
+                    <li><a href="../ownerCommittee/callBoardManage.html">普通公告管理</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-envelope"></i> <span class="nav-label">建议投诉 </span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="../ownerCommittee/ownerComplain.html">业主投诉</a></li>
+                    <li><a href="../ownerCommittee/ownerSuggest.html">业主建议</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-pie-chart"></i> <span class="nav-label">小区信息</span> <span class="fa arrow"></span> </a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="../ownerCommittee/villageMsgManage.html">小区信息管理</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">业委会信息管理</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="../ownerCommittee/committeeRemarks.html">业委会备案</a></li>
+                    <li><a href="../ownerCommittee/ownerMsgManage.html">业委会信息管理</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">辖区数据库</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="../areaDataBase/villageData.html">小区数据</a></li>
+                    <li><a href="../areaDataBase/ownerData.html">业主数据</a></li>
+                    <li><a href="../areaDataBase/committeeData.html">业委会数据</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">社区街道授权管理</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="../buildingManage/jDzhGl.html">街道账户授权</a></li>
+                    <li><a href="../buildingManage/sQzhGl.html">社区账户授权</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top  " role="navigation">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="搜索" class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <span class="m-r-sm text-muted welcome-message">欢迎进入文明社区平台</span>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="empty_page.html#">
+                                <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-messages">
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <img alt="image" class="img-circle" src="../../frame/img/a7.jpg">
+                                        </a>
+                                        <div class="media-body">
+                                            <small class="pull-right">46h ago</small>
+                                            <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>.
+                                            <br>
+                                            <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <img alt="image" class="img-circle" src="../../frame/img/a4.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="pull-right text-navy">5h ago</small>
+                                            <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>.
+                                            <br>
+                                            <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <img alt="image" class="img-circle" src="../../frame/img/profile.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="pull-right">23h ago</small>
+                                            <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                            <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="mailbox.html">
+                                            <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="empty_page.html#">
+                                <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="mailbox.html">
+                                        <div>
+                                            <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                            <span class="pull-right text-muted small">4 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="profile.html">
+                                        <div>
+                                            <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                            <span class="pull-right text-muted small">12 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="grid_options.html">
+                                        <div>
+                                            <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                            <span class="pull-right text-muted small">4 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="notifications.html">
+                                            <strong>See All Alerts</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-sign-out"></i> 登出
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!--<div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-sm-4">
+                    <h2>This is main title</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="index.html">This is</a>
+                        </li>
+                        <li class="active">
+                            <strong>Breadcrumb</strong>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-sm-8">
+                    <div class="title-action">
+                        <a href="empty_page.html" class="btn btn-primary">This is action area</a>
+                    </div>
+                </div>
+            </div>-->
+            <div class="wrapper wrapper-content">
+                  <div class="row wrapper border-bottom white-bg page-heading mb40">
+                        <div class="col-sm-4">
+                            <h2>信息审核</h2>
+                        </div>
+                    </div>
+                <div class="animated fadeInRightBig">
+                  <!--页面容-->
+                    <select class="select2_level_3 form-control wd120 inline mgl10">
+                    <option >街道</option>
+                    <option >1</option>
+                    <option >2</option>
+                    </select>
+
+                    <select class="select2_level_3 form-control wd120 inline mgl10">
+                    <option >社区</option>
+                    <option >1</option>
+                    <option >2</option>
+                    </select>
+
+                    <select class="select2_level_3 form-control wd120 inline mgl10">
+                    <option >小区</option>
+                    <option >1</option>
+                    <option >2</option>
+                    </select>
+                    
+                    <select class="select2_level_3 form-control wd120 inline mgl10">
+                    <option >状态</option>
+                    <option >1</option>
+                    <option >2</option>
+                    </select>
+                
+                    <select class="select2_level_3 form-control wd120 inline mgl10">
+                    <option >事项类型</option>
+                    <option >1</option>
+                    <option >2</option>
+                    </select>
+
+                <div style="margin-top: 20px">
+                    <button type="button" class="btn btn-w-m btn-primary mgl10" data-toggle="modal" data-target="#myModal1">审核</button>
+                     <button type="button" class="btn btn-w-m btn-primary mgl10" data-toggle="modal" data-target="#myModal6">查看操作记录</button>
+                   <!--<button type="button" class="btn btn-primary"></button>
+                   <button type="button" class="btn btn-primary"></button>-->
+               </div> 
+             <div class="row mg20">
+                <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>编号</th>
+                                <th>事件类型</th>
+                                <th>小区</th>
+                                <th>提交人</th>
+                                <th>提交时间</th>
+                                <th>状态</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>          
+                             <tr>
+                                <td>1</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>                     
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+             </div>
+            </div>
+            </div>
+            <div class="footer">
+                <div class="pull-right">
+                    共建文明社区
+                </div>
+                <div>
+                    <strong>Copyright</strong> 高信网络 &copy; 2017-2018
+                </div>
+            </div>
+        </div>
+    </div>
+      <!--A3街道审核模态框-->
+      <div class="modal inmodal fade" id="myModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <div class="modal-title">A3街道审核</div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                                    <!--模态宽内容-->
+                     <div class="col-md-12" style="background-color: #fff;height: 50px;line-height: 50px">
+                            <div class="row">
+                                <div style="float:left;margin-right: 30px;margin-left: 10px"><span class="colred">提交人:</span><i>王大力</i></div>
+                                <div style="float:left;"><span class="colred">联系电话:</span><i>186515641</i></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mg40">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 col-sx-2 tr colred fw">事项类型</div>
+                                <div class="col-md-10 col-sm-10 col-sx-10">选聘和解聘物业服务企业</div>
+                            </div>
+                            <div class="row mg20">
+                                <div class="col-md-2 col-sm-2 col-sx-2 tr colred fw">事项标题</div>
+                                <div class="col-md-10 col-sm-10 col-sx-10"> 万科金域缇香小区成立业委会申请</div>
+                            </div>
+                            <div class="row mg20">
+                                <div class="col-md-2 col-sm-2 col-sx-2 tr colred fw">小区名称</div>
+                                <div class="col-md-10 col-sm-10 col-sx-10">万科金域缇香</div>
+                            </div>
+                            <div class="row mg20">
+                                <div class="col-md-2 col-sm-2 col-sx-2 tr colred fw">业主总户数</div>
+                                <div class="col-md-10 col-sm-10 col-sx-10">28000人</div>
+                            </div>
+                            <div class="row mg20">
+                                <div class="col-md-2 col-sm-2 col-sx-2 tr colred fw">签名人数</div>
+                                <div class="col-md-10 col-sm-10 col-sx-10">线上签名：<span>28000</span>人<a>查看签名</a></div>
+                            </div>
+                            <div class="row mg20">
+                                <div class="col-md-2 col-sm-2 col-sx-2 tr colred fw">申请书</div>
+                                <div class="col-md-10 col-sm-10 col-sx-10"><a>查看详情</a></div>
+                            </div>
+                            <div class="row mg20">
+                                <div class="col-md-2 col-sm-2 col-sx-2 tr colred fw">附件</div>
+                                <div class="col-md-10 col-sm-10 col-sx-10">无</div>
+                            </div>
+                            <div class="row mg20">
+                                <div class="col-md-2 col-sm-2 col-sx-2 tr colred fw">备注审核</div>
+                                <div class="col-md-10 col-sm-10 col-sx-10">
+                                    <textarea class="form-control" id="message" rows="3" placeholder="如果审核不通过，请填写具体原因"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mg20">
+                                <div class="col-md-10 col-sm-10 col-sx-10 col-md-offset-1 col-sx-offset-1 col-sm-offset-1  fw">
+                                   温馨提示：
+                                   <div>(1)如果审核不通过，请填写具体原因</div>
+                                    <div>(2)审核通过后，明确筹备组负责人，并进行<a>授权</a></div>
+                                </div>
+                            </div>
+                            <div class="row mg40 mb40">
+                                <div class="col-md-6 col-sm-6 col-sx-6 tr">
+                                    <button type="button" class="btn btn-w-m btn-primary"  data-toggle="modal" data-target="#myModal2">复核通过</button>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-sx-6 ">                                
+                                    <button type="button" class="btn btn-w-m btn-danger">复核不通过</button>
+                                </div>
+                            </div>
+                        </div>
+                                    <!--内容结束-->                                                      
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">确定</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!--审核类公告模态宽-->
+      <div class="modal inmodal fade" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <div class="modal-title">A3街道审核</div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                                    <!--模态宽内容-->
+                    <div class="row mg20 box-list">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="e-box box-shadow tc"><a href="">提交审核</a></div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="e-box box-shadow tc"><a href="">各主管部门审核</a></div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="e-box box-shadow tc"><a href="">发布公告/公示</a></div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="e-box box-shadow tc"><a href="">归档</a></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mg40 col-md-12">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 col-md-2  control-label colred ">小区名称：</label>
+                                    <div class="col-sm-10 col-md-10 " style="padding-top: 7px">
+                                        万科金域缇香
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 col-md-2  control-label colred ">公告名称：</label>
+                                    <div class="col-sm-10 col-md-10">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 col-md-2  control-label colred ">公告详情：</label>
+                                    <div class="col-sm-10 col-md-10">
+                                        <textarea class="form-control" placeholder="备注说明" style="height: 200px"></textarea>
+                                    </div>
+                                </div>
+
+                               <div class="row mg20" style="padding: 20px">
+                                <div class="col-md-2 col-sm-2 col-sx-2 tr colred fw">公告详情：</div>
+                                <div class="col-md-10 col-sm-10 col-sx-10 bor h200 "></div>
+                               </div>
+
+                                <div class="form-group mg20">
+                                    <label for="inputEmail3" class="col-sm-2 col-md-2 control-label colred ">特殊字段：</label>
+                                    <div class="col-sm-10 col-md-10">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 col-md-2  control-label colred ">附件：</label>
+                                    <div class="col-sm-10 col-md-10">
+                                        <input type="file" id="exampleInputFile">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 col-md-2 control-label colred ">联系人：</label>
+                                    <div class="col-sm-10 col-md-10">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="万科金域缇香">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 col-md-2 control-label colred ">联系电话：</label>
+                                    <div class="col-sm-10 col-md-10">
+                                        <input type="number" class="form-control" id="inputEmail3" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 col-md-2 control-label colred ">公式对象：</label>
+                                    <div class="col-sm-10 col-md-10">
+                                        <select class="form-control m-b" name="account">
+                                        <option>全体业主</option>
+                                        <option>option 2</option>
+                                        <option>option 3</option>
+                                        <option>option 4</option>
+                                    </select>
+                                    </div>
+                                </div>
+                             
+                              <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 col-md-2 control-label colred ">公告时期：</label>
+                                  <div class="col-sm-10 col-md-10 ">
+                                       <div class="input-daterange input-group" id="datepicker">
+                                    <input type="text" class="input-sm form-control" name="start" value="05/14/2014">
+                                    <span class="input-group-addon">至</span>
+                                    <input type="text" class="input-sm form-control" name="end" value="05/22/2014">
+                                      </div>
+                                    </div>
+                                </div>
+                              
+
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-sx-6">
+                                        <div class="col-sm-4  colred" style="text-align: right">操作人：</div>
+                                        <div class="col-sm-6 ">张大力</div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-sx-6">
+                                        <div class="col-sm-4  colred" style="text-align: right">操作人角色：</div>
+                                        <div class="col-sm-6 ">街道负责人</div>
+                                    </div>
+                                </div>
+                                <div class="form-group mg20">
+                                    <label for="inputPassword3" class="col-sm-2 col-md-2  control-label colred ">审核备注：</label>
+                                    <div class="col-sm-10 col-md-10">
+                                        <textarea class="form-control" placeholder="如果审核不通过请写具体原因" style="height: 200px"></textarea>
+                                    </div>
+                                </div>
+                             <div class="row mg40 mb40">
+                                <div class="col-md-6 col-sm-6 col-sx-6 tr">
+                                    <button type="button" class="btn btn-w-m btn-primary">审核通过</button>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-sx-6 ">                                
+                                    <button type="button" class="btn btn-w-m btn-danger">审核不通过</button>
+                                </div>
+                            </div>
+                            </form>
+                            <div class="modal fade" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title">Modal title</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>One fine body&hellip;</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    <!--内容结束-->                                                      
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">确定</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!--审核筹备组成员名单模态框-->
+      <div class="modal inmodal fade" id="myModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <div class="modal-title">A3街道审核</div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                                    <!--模态宽内容-->
+                   <div class="col-md-12" style="background-color: #fff;height: 50px;line-height: 50px">
+                            <div class="row">
+                                <div style="float:left;margin-right: 30px;margin-left: 10px"><span class="colred">提交人:</span><i>王大力</i></div>
+                                <div style="float:left;"><span class="colred">联系电话:</span><i>186515641</i></div>
+                            </div>
+                   </div>
+                        <div class="col-md-12 mg40">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 col-sx-2 tr colred fw">事项类型</div>
+                                <div class="col-md-10 col-sm-10 col-sx-10">筹备组成员审核</div>
+                            </div>
+                            <div class="row mg20">
+                                <div class="col-md-2 col-sm-2 col-sx-2 tr colred fw">事项标题</div>
+                                <div class="col-md-10 col-sm-10 col-sx-10">万科金域提香</div>
+                            </div>
+                            <div class="row mg20">
+                                <div class="col-md-2 col-sm-2 col-sx-2 tr colred fw">小区名称</div>
+                                <div class="col-md-10 col-sm-10 col-sx-10">万科金域提香</div>
+                            </div>
+
+                            <div class="row mg20">
+                                <div class="col-md-2 col-sm-2 col-sx-2   tr colred fw">筹备组名单</div>
+                                <div class="col-md-10 col-sm-10 col-sx-10">
+                                    <div class="ibox float-e-margins">
+                                        <div class="ibox-content">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>姓名</th>
+                                                        <th>性别</th>
+                                                        <th>年龄</th>
+                                                        <th>政治面貌</th>
+                                                        <th>工作单位及职务</th>
+                                                        <th>栋号</th>
+                                                        <th>房号</th>
+                                                        <th>备注</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>王大力</td>
+                                                        <td>男</td>
+                                                        <td>38岁</td>
+                                                        <td>单元</td>
+                                                        <td>麓谷街道成员</td>
+                                                        <td>无</td>
+                                                        <td>无</td>
+                                                        <td>街道代表</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>王大力</td>
+                                                        <td>男</td>
+                                                        <td>38岁</td>
+                                                        <td>单元</td>
+                                                        <td>麓谷街道成员</td>
+                                                        <td>无</td>
+                                                        <td>无</td>
+                                                        <td>街道代表</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>王大力</td>
+                                                        <td>男</td>
+                                                        <td>38岁</td>
+                                                        <td>单元</td>
+                                                        <td>麓谷街道成员</td>
+                                                        <td>无</td>
+                                                        <td>无</td>
+                                                        <td>街道代表</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>王大力</td>
+                                                        <td>男</td>
+                                                        <td>38岁</td>
+                                                        <td>单元</td>
+                                                        <td>麓谷街道成员</td>
+                                                        <td>无</td>
+                                                        <td>无</td>
+                                                        <td>街道代表</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>王大力</td>
+                                                        <td>男</td>
+                                                        <td>38岁</td>
+                                                        <td>单元</td>
+                                                        <td>麓谷街道成员</td>
+                                                        <td>无</td>
+                                                        <td>无</td>
+                                                        <td>街道代表</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>王大力</td>
+                                                        <td>男</td>
+                                                        <td>38岁</td>
+                                                        <td>单元</td>
+                                                        <td>麓谷街道成员</td>
+                                                        <td>无</td>
+                                                        <td>无</td>
+                                                        <td>街道代表</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 col-sx-2 tr colred fw">附件</div>
+                                <div class="col-md-10 col-sm-10 col-sx-10">无 </div>
+                            </div>
+
+                            <div class="row mg20">
+                                <div class="col-md-2 col-sm-2 col-sx-2 tr colred fw">备注审核</div>
+                                <div class="col-md-10 col-sm-10 col-sx-10">
+                                    <textarea class="form-control" id="message" rows="3" placeholder="如果审核不通过，请填写具体原因"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row mg20">
+                                <div class="col-md-10 col-sm-10 col-sx-10 col-md-offset-2 col-sx-offset-2  col-sm-offset-2  fw">
+                                    街道审核通过后，请为筹备组负责人开通账号，进行备案。
+                                </div>
+                            </div>
+
+                              <div class="row mg40 mb40">
+                                <div class="col-md-6 col-sm-6 col-sx-6 tr">
+                                    <button type="button" class="btn btn-w-m btn-primary">审核通过</button>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-sx-6 ">                                
+                                    <button type="button" class="btn btn-w-m btn-danger">审核不通过</button>
+                                </div>
+                            </div>
+
+                        </div>
+                                    <!--内容结束-->                                                      
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">确定</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!--审核业主大会邮票结果的模态框-->
+      <div class="modal inmodal fade" id="myModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <div class="modal-title">A3街道审核</div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                                    <!--模态宽内容-->
+                                 <div class="row">
+                     <div class="col-md-12" style="background-color: #fff;height: 50px;line-height: 50px">
+                            <div class="row">
+                                <div style="float:left;margin-right: 30px;margin-left: 10px"><span class="colred">提交人:</span><i>王大力</i></div>
+                                <div style="float:left;"><span class="colred">联系电话:</span><i>186515641</i></div>
+                            </div>
+                    </div>
+                        <div class="col-md-12 mg40">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 col-sx-2 tr colred fw">事项名称</div>
+                                <div class="col-md-10 col-sm-10 col-sx-10">万科金域缇香第三次大会会议决定事项的公告</div>
+                            </div>
+                            <div class="row mg20">
+                                <div class="col-md-2 col-sm-2 col-sx-2 tr colred fw">事项内容</div>
+                                <div class="col-md-10 col-sm-10 col-sx-10">科金域缇香项目第 三次业主大会会议于 2017年 1月12 日至 15日举行。会议审议通过了《管理规约》、《业主大会议事规则》讨论通过了小区物管服务监督 &nbsp; 等事项；选举 王大力为业主委员会委员。年月日举行的业主委员会会议，推选 张龙为主任，李四 &nbsp;为副主任。
+                             首次业主大会会议筹备组依法履行职责完毕，自即日起解散
+                             特此公告。</div>
+                            </div>
+                            <div class="row mg20">
+                                <div class="col-md-2 col-sm-2 col-sx-2 tr colred fw">附件</div>
+                                <div class="col-md-10 col-sm-10 col-sx-10">万科金域缇香小区业委会成员名单.doc</div>
+                            </div>                   
+                            <div class="row mg20">
+                                <div class="col-md-2 col-sm-2 col-sx-2 tr colred fw">备注审核</div>
+                                <div class="col-md-10 col-sm-10 col-sx-10">
+                                    <textarea class="form-control" id="message" rows="3" placeholder="如果审核不通过，请填写具体原因"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mg20">
+                                <div class="col-md-10 col-sm-10 col-sx-10 col-md-offset-2 col-sx-offset-2 col-sm-offset-2  fw">
+                                    街道审核通过后，请为筹备组负责人开通账号。
+                                </div>
+                            </div>
+                           <div class="row mg40 mb40">
+                                <div class="col-md-6 col-sm-6 col-sx-6 tr">
+                                    <button type="button" class="btn btn-w-m btn-primary">复核通过</button>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-sx-6 ">                                
+                                    <button type="button" class="btn btn-w-m btn-danger">复核不通过</button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                                    <!--内容结束-->                                                      
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!--审核业主大会文件模态框-->
+      <div class="modal inmodal fade" id="myModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <div class="modal-title">A3街道审核</div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                                    <!--模态宽内容-->
+           <div class="mb40">
+                            <button type="button" class="btn btn-w-m btn-primary mgl10">审核</button>
+                            <button type="button" class="btn btn-w-m btn-primary mgl10">审核不通过</button>
+                        </div>
+                        <div class="col-md-12" style="background-color: #fff;height: 50px;line-height: 50px">
+                            <div class="row">
+                                <div style="float:left;margin-right: 30px;margin-left: 10px"><span class="colred">提交人:</span><i>王大力</i></div>
+                                <div style="float:left;"><span class="colred">联系电话:</span><i>186515641</i></div>
+                            </div>
+                        </div>
+
+                        <!--111-->
+                <div class="ibox float-e-margins">               
+                    <div class="ibox-content">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>文件名称</th>
+                                <th>文件</th>
+                                <th>上传时间</th>
+                                <th>审核状态</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                                    <!--内容结束-->                                                      
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!--操作记录模态框-->
+     <div class="modal inmodal fade" id="myModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <div class="modal-title">操作详情</div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                                    <!--模态宽内容-->
+                     <div class="ibox float-e-margins">
+                                <div class="ibox-content">
+                                    <table class="table bgc-fff mg20">
+                                        <thead>
+                                            <tr>
+                                                <th>操作人</th>
+                                                <th>账号</th>
+                                                <th>角色</th>
+                                                <th>操作时间</th>
+                                                <th>操作事项</th>
+                                                <th>操作详情</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>选聘和解聘物业服务企业</td>
+                                                <td>赵三</td>
+                                                <td>1200</td>
+                                                <td>280（21.8%）</td>
+                                                <td>2017.01.12</td>
+                                                <td>已召集业主大会</td>
+                                            </tr>
+                                            <tr>
+                                                <td>选聘和解聘物业服务企业</td>
+                                                <td>赵三</td>
+                                                <td>1200</td>
+                                                <td>280（21.8%）</td>
+                                                <td>2017.01.12</td>
+                                                <td>已召集业主大会</td>
+                                            </tr>
+                                            <tr>
+                                                <td>选聘和解聘物业服务企业</td>
+                                                <td>赵三</td>
+                                                <td>1200</td>
+                                                <td>280（21.8%）</td>
+                                                <td>2017.01.12</td>
+                                                <td>已召集业主大会</td>
+                                            </tr>
+                                            <tr>
+                                                <td>选聘和解聘物业服务企业</td>
+                                                <td>赵三</td>
+                                                <td>1200</td>
+                                                <td>280（21.8%）</td>
+                                                <td>2017.01.12</td>
+                                                <td>已召集业主大会</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                                    <!--内容结束-->                                                      
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    <!-- Mainly scripts -->
+    <script src="../../frame/js/jquery-2.1.1.js"></script>
+    <script src="../../frame/js/bootstrap.min.js"></script>
+    <script src="../../frame/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../../frame/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="../../frame/js/inspinia.js"></script>
+    <script src="../../frame/js/plugins/pace/pace.min.js"></script>
+    <script src="../../static/js/ownerNameList.min.js"></script>
+</body>
+</html>
