@@ -14,6 +14,8 @@
     <link href="../frame/css/animate.css" rel="stylesheet">
     <link href="../frame/css/style.css" rel="stylesheet">
     <link href="../static/css/admin-login.css" rel="stylesheet">
+    <script src="../frame/js/jquery-2.1.1.js"></script>
+    <script src="../static/js/template.js"></script>    
 
 </head>
 
@@ -42,40 +44,54 @@
 
             <div class="wrapper wrapper-content">
                 <div class="middle-box text-center animated fadeInRightBig" style="max-width: 800px;margin-top: 20px;">
-                   <div class="row">
-                        <div class="col-md-4">
-                            <div class="e-box box-shadow">
-                                <a href="#">住建</a>
+                    <div id="content">
+                        <script id="userInfo" type="text/html">
+                            <div class="row">
+                                {{if roles[0].rolename.indexOf('building') != -1}}
+                                    <div class="col-md-4">
+                                        <div class="e-box box-shadow">
+                                            <a href="../page/buildingManage/index.html?roles=building">住建</a>
+                                        </div>
+                                    </div>
+                                {{/if}}
+                                {{if roles[0].rolename.indexOf('street') != -1}}
+                                <div class="col-md-4">
+                                    <div class="e-box box-shadow">
+                                        <a href="../page/communityManage/index.html?roles=street">街道</a>
+                                    </div>
+                                </div>
+                                {{/if}}
+                                {{if roles[0].rolename.indexOf('community') != -1}}
+                                <div class="col-md-4">
+                                    <div class="e-box box-shadow">
+                                        <a href="../page/communityManage/index.html?roles=community">社区</a>
+                                    </div>
+                                </div>
+                                {{/if}}
+                                {{if roles[0].rolename.indexOf('prepareGroup') != -1}}
+                                <div class="col-md-4">
+                                    <div class="e-box box-shadow">
+                                        <a href="../page/prepareGroup/jDxQ.html?roles=prepareGroup">筹备组</a>
+                                    </div>
+                                </div>
+                                {{/if}}
+                                {{if roles[0].rolename.indexOf('ownerCommittee') != -1}}
+                                <div class="col-md-4">
+                                    <div class="e-box box-shadow">
+                                        <a href="../page/ownerCommittee/index.html?roles=ownerCommittee">业委会</a>
+                                    </div>
+                                </div>
+                                {{/if}}
+                                {{if roles[0].rolename.indexOf('operation') != -1}}
+                                <div class="col-md-4">
+                                    <div class="e-box box-shadow">
+                                        <a href="../page/operationManage/index.html?roles=operation">运营</a>
+                                    </div>
+                                </div>
+                                {{/if}}
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="e-box box-shadow">
-                                <a href="#">街道</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="e-box box-shadow">
-                                <a href="#">社区</a>
-                            </div>
-                        </div>
-                   </div>
-                   <div class="row" style="margin-top: 20px;">
-                        <div class="col-md-4">
-                            <div class="e-box box-shadow">
-                                <a href="#">筹备组</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="e-box box-shadow">
-                                <a href="#">业委会</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="e-box box-shadow">
-                                <a href="#">运营</a>
-                            </div>
-                        </div>
-                   </div>
+                        </script>
+                    </div>
                 </div>
             </div>
             <div class="footer">
@@ -90,16 +106,17 @@
         </div>
     </div>
 
+    
     <!-- Mainly scripts -->
-    <script src="../frame/js/jquery-2.1.1.js"></script>
     <script src="../frame/js/bootstrap.min.js"></script>
     <script src="../frame/js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="../frame/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
+
     <!-- Custom and plugin javascript -->
     <script src="../frame/js/inspinia.js"></script>
     <script src="../frame/js/plugins/pace/pace.min.js"></script>
-
+    <script src="../static/js/admin-login.min.js"></script>
 
 </body>
 

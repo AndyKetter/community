@@ -6,6 +6,9 @@ $boxShadowColor: #ddd;
 .ft18{
     font-size: 18px;
 }
+.h22{
+    height: 22px;
+}
 .tc{
     text-align: center; 
 }
@@ -33,6 +36,9 @@ $boxShadowColor: #ddd;
 .bgc-fff{
     background-color: #fff;
 }
+.none{
+    display: none !important;
+}
 .c-red{
     color: #E51C23;
 }
@@ -49,8 +55,49 @@ $boxShadowColor: #ddd;
     position: relative;
     top: 7px;
 }
+.p-t-4{
+    position: relative;
+    top: 5px;
+}
 .w66{
     width: 66px;
+}
+.bg-ffa726{
+    background-color: #ffa726;
+}
+.bg-26c6da{
+    background-color: #26c6da;
+}
+.bg-9ccc65{
+    background-color: #9ccc65;
+}
+table{
+    tr{
+        >td{
+            text-align: center;
+        }
+        >th{
+            text-align: center;
+        }
+    }
+}
+.table-pd{
+    tr{
+        >td{
+            text-align: left !important;
+            padding-left: 20px !important;
+        }
+        >th{
+            text-align: left !important;
+            padding-left: 20px !important;
+        }
+    }
+}
+.w100{
+    width: 100%;
+}
+.w800{
+    width: 800px;
 }
 /* huweiming*/
 

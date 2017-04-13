@@ -1,0 +1,27 @@
+@import 'common';
+.box-list {
+    background-color: #fff;
+    padding: 15px 0;
+    .e-box {  
+        height: 150px;
+        line-height: 150px;
+        font-size: 18px;
+        cursor: pointer;  
+        background-color: #F3F3F4;
+        a {
+            color: #676A6C;
+        }
+    }
+}
+
+.waits {
+    .e-box {
+        height: 120px;   
+        line-height: 120px;
+        font-size: 18px;
+        border: 1px solid #1ab394;
+        a {
+            color: #676A6C;
+        }
+    }
+}   
